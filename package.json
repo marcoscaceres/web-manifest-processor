@@ -1,0 +1,36 @@
+{
+  "name": "w3c-manifest",
+  "description": "A W3C Manifest Processor",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/marcoscaceres/web-manifest-processor.git"
+  },
+  "devDependencies": {
+    "babel-loader": "^6.2.4",
+    "babel-polyfill": "^6.7.4",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-register": "^6.7.2",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.3.0",
+    "copy-webpack-plugin": "^1.1.1",
+    "mocha": "^2.4.5",
+    "webpack": "^1.12.15",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "start": "webpack-dev-server --hot --inline",
+    "test": "mocha --ui qunit --compilers js:babel-core/register"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "author": "Marcos Cáceres",
+  "license": "MIT",
+  "dependencies": {
+    "intl": "^1.1.0"
+  }
+}
